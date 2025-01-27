@@ -1,0 +1,15 @@
+<div class="comment-list">
+    <p-dataView [value]="comments" layout="list">
+      <ng-template #list  pTemplate="listItem">
+        <div  *ngFor="let comment of comments" class="comment-item">
+          <img class="user-logo" [src]="" alt="User Logo" />
+          <div class="comment-content">
+            <div class="comment-header">
+              <span class="username">{{ comment.userName }} {{ comment.createdDate | date:'medium'}}</span>              
+            </div>
+            <div class="user-comments">{{ comment.userComment}}</div>
+          </div>
+        </div>
+      </ng-template>
+    </p-dataView>
+  </div>

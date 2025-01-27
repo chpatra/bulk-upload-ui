@@ -1,0 +1,14 @@
+<!-- user-comments.component.html -->
+<div class="p-card">
+    <div class="p-card-title">User Comments/Discussion</div>
+    <div class="p-card-content">  
+        
+<div class="card flex justify-center">   
+      <textarea rows="5" cols="30" pTextarea  [(ngModel)]="comment"></textarea>
+</div>
+      <div class="button-group">
+        <button pButton type="button" label="Post"  class="p-button-success" (click)="postComment()"></button>
+        <button pButton type="button" label="Cancel" (click)="cancelComment()" class="p-button-secondary"></button>
+      </div>
+    </div>
+  </div>
